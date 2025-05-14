@@ -16,7 +16,7 @@
 
 4. Create a `.env` file in the root directory with the following variables:
    ```
-   GROQ_API_KEY=your_groq_api_key
+   GOOGLE_API_KEY=your_gemini_api_key
    ```
 
 ## Usage
