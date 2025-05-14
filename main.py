@@ -123,9 +123,8 @@ class VoiceRecorderGUI:
         self.label.pack(pady=10)
         self.start_btn = tk.Button(root, text="Start Recording", command=self.start_recording, width=20, font=("Arial", 12))
         self.start_btn.pack(pady=5)
-        # Removed stop_btn and its packing
         self.root.bind('<Control-r>', lambda event: self.start_recording())
-        # Removed <Control-s> binding
+        
 
     def start_recording(self):
         if self.is_listening:
@@ -148,7 +147,7 @@ class VoiceRecorderGUI:
             speak_text_stream(f"Microphone error. {e}")
         finally:
             self.is_listening = False
-            # Directly process audio after listening, no stop_recording
+            # Directly process audio after listening
             self.root.after(0, self.process_audio if self.audio else self.no_audio_captured)
 
     def no_audio_captured(self):
@@ -196,16 +195,13 @@ class VoiceRecorderGUI:
         finally:
             self.audio = None
 
-# Remove CLI chat loop and only run the GUI
+
 
 def run_voice_gui():
     root = tk.Tk()
     app = VoiceRecorderGUI(root)
     root.mainloop()
 
-# To run the GUI, uncomment the following line:
-run_voice_gui()
-# Or, you can add a command in your CLI to launch the GUI.
 
-# if __name__ == "__main__":
-#     asyncio.run(chat_loop())
+run_voice_gui()
+
