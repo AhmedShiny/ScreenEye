@@ -1,3 +1,5 @@
+# ScreenEye
+ScreenEye is an AI assistive project to help blind individuals understand what's on their screen. 
 ## Installation
 
 1. Clone this repository
