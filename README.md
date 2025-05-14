@@ -3,17 +3,10 @@ ScreenEye is an AI assistive project to help blind individuals understand what's
 ## Installation
 
 1. Clone this repository
-2. Create a virtual environment:
+2. Create a virtual environment
+3. Install dependencies from the requirements.txt file:
    ```
-   uv venv # recommended
-   
-   .venv\Scripts\activate  # On Windows
-   
-   source .venv/bin/activate  # For Mac/Linux:
-   ```
-3. Install dependencies (create a requirements.txt file with the following):
-   ```
-   python -m pip install -r requirements.txt
+   pip install -r requirements.txt
    ```
 
 4. Create a `.env` file in the root directory with the following variables:
