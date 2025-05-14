@@ -29,7 +29,7 @@ SYSTEM_PROMPT = (
     "Whenever you receive a screenshot, describe its content in detail, including text, layout, and any important visual elements. "
     "Be concise, clear, and helpful. "
     "Ignore the gui window start recording and stop recording, as it is not relevant to the task."
-    "Don't include any artsterik*s or any other special characters in your response.Just include plain text "
+    "Don't include any artsteriks or any other special characters in your response.JUST INCLUDE PLAIN TEXT."
 )
 
 
@@ -199,7 +199,7 @@ class VoiceRecorderGUI:
 
 def run_voice_gui():
     root = tk.Tk()
-    app = VoiceRecorderGUI(root)
+    VoiceRecorderGUI(root)
     root.mainloop()
 
 
