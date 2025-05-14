@@ -1,5 +1,5 @@
 # ScreenEye
-ScreenEye is an AI assistive project to help blind individuals understand what's on their screen. 
+ScreenEye is an AI assistive project to help blind individuals understand what's on their screen. CTRL+R shortcut to start recording.
 ## Installation
 
 1. Clone this repository
